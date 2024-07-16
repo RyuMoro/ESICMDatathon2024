@@ -1,14 +1,24 @@
 # ESICMDatathon2024
-(This is a forked version)<br>
-The BigQuery SQL codes here were used on team 6 AKI phenotyping. <br>
+Working files for the Team 5: AKI phenotyping. <br>
 I was a member in a team of data scientists and ICU physicians.
+
+Main Files:
+
+[Cluster.ipynb](https://github.com/RyuMoro/ESICMDatathon2024/blob/ffc73707885e67223383c1781dd72e7d00818e86/Cluster.ipynb):
+The notebook for clustering.
+
+[__FINAL ABSTRACT](https://github.com/RyuMoro/ESICMDatathon2024/blob/ffc73707885e67223383c1781dd72e7d00818e86/__FINAL%20ABSTRACT%20-%20DATATHON%20FINALS%20-%20Exploring%20Acute%20Kidney%20Injury%20Complexity_%20Comparing%20Two%20Unsupervised%20Cluster%20Analysis%20Methods%20to%20Identify%20Phenotypic%20Patterns%20in%20Critical%20Care%20Patients.pdf):
+The final abstract document for the event. It explains our project from both a medical and a data science point of view.
+
+Other notebooks:
+They mainly contain the data extraction process with SQL, the data preprocessing and the clustering.
 
 TLDR:
 
-In the round of "traditional" clustering, AgglomerativeClustering with clusters=4 after 1) removing features above correlation 0.9; 2) Generating polynomial features; 3) Applying PCA (0.95); 4) Removing outlier clusters.
+In the round of "traditional" clustering, AgglomerativeClustering with clusters=4 after 1) removing features above correlation 0.9; 2) generating polynomial features; 3) applying PCA (0.95); 4) removing outlier clusters.
 
-Algorithms used for Deep Learning Clustering:<br>
+Algorithms used for deep learning clustering:<br
 Autoencoder, Variational Autoencoder, ClusterGAN, Deep Clustering Network
 
-Deep Clustering Network has showed best scores in both K=3 and 4 (0.909 & 0.683).
-No further hyperparameter tuning has not been done because an Autoencoder model has been chosen for the presentation.
+Deep Clustering Network showed the best results in both K=3 and 4 (0.909 & 0.683).
+No further hyperparameter tuning was done because an autoencoder model was chosen for the presentation.
