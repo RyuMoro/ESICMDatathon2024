@@ -15,7 +15,7 @@ They mainly contain the data extraction process with SQL, the data preprocessing
 
 TLDR:
 
-In the round of "traditional" clustering, AgglomerativeClustering with clusters=4 after 1) removing features above correlation 0.9; 2) generating polynomial features; 3) applying PCA (0.95); 4) removing outlier clusters.
+In the round of traditional clustering, AgglomerativeClustering with K=4 showed the best result with a silhouette score of 0.55 after 1) removing features above correlation 0.9; 2) generating polynomial features; 3) applying PCA (0.95); 4) removing outlier clusters.
 
 Algorithms used for deep learning clustering:<br
 Autoencoder, Variational Autoencoder, ClusterGAN, Deep Clustering Network
